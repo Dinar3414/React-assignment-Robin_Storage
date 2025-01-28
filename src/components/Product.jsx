@@ -1,14 +1,13 @@
 import React from 'react'
 
-const Product = (props) => {
-    const [product] = props;
+const Product = ({product}) => {
 
   return (
     <section className="product">
 
     <img src={product.image} alt="" />
 
-    <div className = "product_details">
+    <div className = "product_details ">
         <h4 className="product_title">{product.title}</h4>
         <p>Price : ${product.price}</p>
         <p>Rating : {product.rating.rate}</p>

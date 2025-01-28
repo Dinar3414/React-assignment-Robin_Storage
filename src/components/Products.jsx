@@ -1,10 +1,8 @@
 import React from 'react';
-import Product from './Products';
+import Product from './Product';
 
 
-const Products = (props) => {
-  const {products} = props;
-
+const Products = ({products}) => {
   return (
     <div className='products'>
         {
